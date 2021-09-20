@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <title>Motherboard</title>
+</head>
+<style>
+    *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        [class^='row']{
+            flex-basis: 15vh;
+            flex-direction:row;
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        h1{
+            font-size: 5vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h2{
+            font-size: xx-large;
+            padding-top: 3%;
+            padding-bottom: 2%;
+        }
+    
+        [class^='box']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        [class^='espacio']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        /* Aquí se definen las cosas. La mayoría se explica solo */
+        div.nav{
+            background-color: #003638;
+        }
+        .contenido{
+            padding: 3%;
+            background-color: #EAFFFF;
+        }
+        .espacio1{
+            flex-basis: 10%;
+        }
+        .espacio2{
+            flex-basis: 14.28%;
+        }
+        .box1{
+            flex-basis: 100%;
+            font-family: 'Warnes', cursive;
+            font-size: 7vh;
+        }
+        .box2{
+            flex-basis: 14.28%;
+            text-align: center;
+        }
+        .box3{
+            flex-basis: 10%;
+
+        }
+        .box4{
+            flex-basis: 100%;
+            text-align: justify;
+            flex-direction: column;
+            text-justify: inter-word;
+        }
+        .box4 p{
+            padding-bottom: 2%;
+        }
+        .box2 a{
+            color: #48CAE4;
+        }
+        
+        @media screen and (max-width:600px) {
+            div.row1{
+                flex-direction: column;
+            }
+            .row{
+                flex-direction: column;
+            }
+            .contenido{
+                flex-direction: column;
+            }
+            .box2{
+                flex-basis: 100%;
+                display:inline;
+                flex-direction: column;
+            }
+            .espacio2{
+                flex-basis: 0%;
+            }
+        }
+
+        .imgcont{
+            padding: 10px;
+        }
+        .espacio3{
+            height: 2vh;
+        }
+        .row1{
+            background-color: #055052;
+        }
+        div.row1 div.box2  :hover{
+            transition: all 0.4s linear;
+            background-color: #53B8BB;
+            color: #EAFFFF;
+            /*color: #003638;*/
+            /*padding-top: 5px;*/
+            /*padding-bottom: 5px;*/
+            width: 100%;
+            
+            display: inline-block;
+            border-radius: 10px;
+        }
+        a.letra1{
+            color: #22577A;
+            font-size: 9vh;
+        }
+        a.letra2{
+            color:#57CC99;
+        }
+</style>
+<body>
+    <div class="nav">
+        <!-- Ahora comienza el menú --> 
+        <div class="row">
+
+            <div class="box1">
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" class="letra2" >rotu</a>
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" >ech</a>
+                
+                </div>
+        </div>
+
+        <div class="row1">
+            <div class="espacio2"></div>
+            <div class="box2"><a href="Componentes.html">Componentes </a></div>
+            <div class="box2"><a href="Perifericos.html">Periféricos</a></div>
+            <div class="box2"><a href="Lenguajes de programacion.html">Programación</a></div>
+            <div class="box2"><a href="Smartphones.html">Smartphones</a></div>
+            <div class="box2"><a href="nuevoform.html">Contáctanos</a></div>
+            <div class="espacio2"></div>
+        </div>
+        <div class="espacio3"></div>
+    </div>
+    <!--Aquí es la zona específica del espacio conocido en que el contenido toma lugar-->
+    <div class="contenido">
+        <div class="row">
+            <div class="espacio1"></div>
+            
+            <div class="box4">
+                    
+                    <div class="articulos">
+                        <div class="row">
+                            <div class="box3">
+                                <h1>Motherboard</h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="box4" >
+                                <p>La placa base, también conocida como tarjeta madre, placa madre o placa principal (motherboard o mainboard en inglés), es una tarjeta de circuito impreso a la que se conectan los componentes que constituyen la computadora. Es una parte fundamental para montar cualquier computadora personal de escritorio o portátil o algún dispositivo. Tiene instalados una serie de circuitos integrados, entre los que se encuentra el circuito integrado auxiliar (chipset), que sirve como centro de conexión entre el microprocesador (CPU), la memoria de acceso aleatorio (RAM), las ranuras de expansión y otros dispositivos 
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="box4" >
+                                <p>Está instalada dentro de una carcasa o gabinete que por lo general está hecha de chapa y tiene un panel para conectar dispositivos externos y muchos conectores internos y zócalos para instalar componentes internos. 
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4" >
+                                <p>La placa base, además incluye un firmware llamado BIOS, que le permite realizar las funcionalidades básicas, como pruebas de los dispositivos, vídeo y manejo del teclado, reconocimiento de dispositivos y carga del sistema operativo. 
+                                </p> 
+                            </div>
+                        </div>
+                        <!--Imágenes-->
+                        <div class="row">
+                            <div class="box4" >
+                               
+                                <img class="imgcont" src="https://www.wepc.com/wp-content/uploads/2020/07/How-To-Check-What-Motherboard-You-Have.jpg" width="50%"" height="auto">
+
+                                 <img class="imgcont" src="https://compuservicedelnoroeste.com/wp-content/uploads/2020/11/technology-computer-motherboard-1396677-1024x768.jpg" 
+                                width="50%"" height="auto">
+
+                            </div>
+                            
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="box3">
+                                <h2>CPU</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>La unidad central de procesamiento (conocida por las siglas CPU, del inglés Central Processing Unit) o procesador es el hardware dentro de un computador, teléfonos inteligentes y otros dispositivos programables.Su trabajo es interpretar las instrucciones de un programa informático mediante la realización de las operaciones básicas aritméticas, lógicas y externas (provenientes de la unidad de entrada/salida). Su diseño y avance ha variado notablemente desde su creación, aumentando su eficiencia y potencia, y reduciendo aspectos como el consumo de energía y el costo. </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="box4" >
+                                <img class="imgcont" src="https://hardzone.es/app/uploads-hardzone.es/2020/06/CPU.jpg" width="50%"" height="auto">
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="box3">
+                                <h2>Memoria RAM</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>La memoria RAM es la memoria principal de un dispositivo, esa donde se almacenan de forma temporal los datos de los programas que estás utilizando en este momento. Sus siglas significan Random Access Memory, lo que traducido al español sería Memoria de Acceso Aleatorio, y es un tipo de memoria que te puedes encontrar en cualquier dispositivo, desde ordenadores de sobremesa hasta teléfonos móviles. La memoria RAM tiene dos características que la diferencian del resto de tipos de almacenamiento. Por una parte tiene una enorme velocidad, y por otra los datos sólo se almacenan de forma temporal. Esto quiere decir que cada vez que reinicies o apagues tu ordenador, lo normal es que los datos que haya almacenados en la RAM se pierdan. </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="box4" >
+                                <img class="imgcont" src="https://acis.org.co/portal/sites/default/files/memoria-ram-hyperx-ddr4-8gb-2933mhz-predator-rgb-D_NQ_NP_906269-MCO31124926284_062019-F.jpg" width="50%"" height="auto">
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="box3">
+                                <h2>Disco Duro</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>En informática, la unidad de disco duro o unidad de disco rígido (en inglés: hard disk drive, HDD) es un dispositivo de almacenamiento de datos que emplea un sistema de grabación magnética para almacenar y recuperar archivos digitales. Se compone de uno o más platos o discos rígidos, recubiertos con material magnético y unidos por un mismo eje que gira a gran velocidad dentro de una caja metálica sellada. Sobre cada plato, y en cada una de sus caras, se sitúa un cabezal de lectura/escritura que flota sobre una delgada lámina de aire generada por la rotación de los discos.​ Permite el acceso aleatorio a los datos, lo que significa que los bloques de datos se pueden almacenar o recuperar en cualquier orden y no solo de forma secuencial. Las unidades de disco duro son un tipo de memoria no volátil, que retienen los datos almacenados incluso cuando están apagados.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="box4" >
+                                <img class="imgcont" src="http://www.partesdeunacomputadora.net/wp-content/uploads/2013/07/interior-disco-duro.jpg" width="50%"" height="auto">
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="box3">
+                                <h2>Tarjeta Gráfica</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>Una tarjeta gráfica o tarjeta de video es una tarjeta de expansión de la tarjeta madre o motherboard del computador que se encarga de procesar los datos provenientes del procesador y transformarlos en información comprensible y representable en el dispositivo de salida (por ejemplo: monitor, televisor o proyector). Estas tarjetas utilizan una unidad de procesamiento gráfico o GPU, que muchas veces se usa erróneamente para referirse a la tarjeta gráfica en sí. También se les conoce como Adaptador de pantalla, Adaptador de vídeo, Placa de vídeo, y Tarjeta aceleradora de gráficos.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="box4" >
+                                <img class="imgcont" src="https://www.profesionalreview.com/wp-content/uploads/2017/04/C%C3%B3mo-entender-las-especificaciones-de-la-tarjeta-gr%C3%A1fica-3.jpg" width="50%"" height="auto">
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="box3">
+                                <h2>Fuente de Alimentación</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>Una fuente de alimentación es un componente esencial de cualquier dispositivo electrónico ya que es ella quien se encarga de darle vida. En cualquier equipo, por pequeño que sea, siempre hay una fuente de alimentación, aunque no la veamos. Desde smartphones, hasta televisores y ordenadores, todos tienen un componente que se encarga de hacer lo que una fuente de alimentación hace, que es gestionar la entrada de energía desde la red y adaptarla para darle energía al equipo. Una fuente de alimentación, por lo tanto, es un dispositivo que se encarga proporcionar la corriente justa y necesaria a un equipo electrónico.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="box4" >
+                                <img class="imgcont" src="https://tecnonucleous.com/content/images/2018/02/fuente-de-poder.jpg" width="50%"" height="auto">
+                            </div>
+                        </div>
+
+                        
+                    </div>
+            </div>
+            
+            
+            <div class="espacio1"></div>
+        </div>
+    </div>
+</body>
+</html>

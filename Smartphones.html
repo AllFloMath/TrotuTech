@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <title>Smartphones</title>
+</head>
+<style>
+    *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        [class^='row']{
+            flex-basis: 15vh;
+            flex-direction:row;
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        h1{
+            font-size: 5vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h2{
+            font-size: xx-large;
+            padding-top: 3%;
+            padding-bottom: 2%;
+        }
+    
+        [class^='box']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        [class^='espacio']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        /* Aquí se definen las cosas. La mayoría se explica solo */
+        div.nav{
+            background-color: #003638;
+        }
+        .contenido{
+            padding: 3%;
+            background-color: #EAFFFF;
+        }
+        .espacio1{
+            flex-basis: 10%;
+        }
+        .espacio2{
+            flex-basis: 14.28%;
+        }
+        .box1{
+            flex-basis: 100%;
+            font-family: 'Warnes', cursive;
+            font-size: 7vh;
+        }
+        .box2{
+            flex-basis: 14.28%;
+            text-align: center;
+        }
+        .box3{
+            flex-basis: 10%;
+        }
+        .box4{
+            flex-basis: 100%;
+            text-align: justify;
+            text-justify: inter-word;
+            flex-direction: column;
+        }
+        .box4 p{
+            padding-bottom: 2%;
+        }
+        .box2 a{
+            color: #48CAE4;
+        }
+        
+        @media screen and (max-width:600px) {
+            div.row1{
+                flex-direction: column;
+            }
+            .row{
+                flex-direction: column;
+            }
+            .contenido{
+                flex-direction: column;
+            }
+            .box2{
+                flex-basis: 100%;
+                display:inline;
+                flex-direction: column;
+            }
+            .espacio2{
+                flex-basis: 0%;
+            }
+        }
+
+        .imgcontsmart{
+            padding: 10px;
+        }
+        .espacio3{
+            height: 2vh;
+        }
+        .row1{
+            background-color: #055052;
+        }
+        div.row1 div.box2  :hover{
+            transition: all 0.4s linear;
+            background-color: #53B8BB;
+            color: #EAFFFF;
+            /*color: #003638;*/
+            /*padding-top: 5px;*/
+            /*padding-bottom: 5px;*/
+            width: 100%;
+            
+            display: inline-block;
+            border-radius: 10px;
+        }
+        a.letra1{
+            color: #22577A;
+            font-size: 9vh;
+        }
+        a.letra2{
+            color:#57CC99;
+        }
+</style>
+<body>
+    <div class="nav">
+        <!-- Ahora comienza el menú --> 
+        <div class="row">
+
+            <div class="box1">
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" class="letra2" >rotu</a>
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" >ech</a>
+                
+                </div>
+        </div>
+
+        <div class="row1">
+            <div class="espacio2"></div>
+            <div class="box2"><a href="Componentes.html">Componentes </a></div>
+            <div class="box2"><a href="Perifericos.html">Periféricos</a></div>
+            <div class="box2"><a href="Lenguajes de programacion.html">Programación</a></div>
+            <div class="box2"><a href="Smartphones.html">Smartphones</a></div>
+            <div class="box2"><a href="nuevoform.html">Contáctanos</a></div>
+            <div class="espacio2"></div>
+        </div>
+        <div class="espacio3"></div>
+    </div>
+    <!--Aquí es la zona específica del espacio conocido en que el contenido toma lugar-->
+    <div class="contenido">
+        <div class="row">
+            <div class="espacio1"></div>
+            
+            <div class="box4">
+                    
+                    <div class="articulos">
+                        <div class="row">
+                            <div class="box3">
+                                <h1>Smartphones</h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="box4" >
+                                <p>El teléfono inteligente (del inglés smartphone) es un dispositivo móvil que combina las funciones de un teléfono celular y de una computadora u ordenador de bolsillo. Estos dispositivos funcionan sobre una plataforma informática móvil, con mayor capacidad de almacenar y capaz de realizar tareas simultáneamente, tareas que realiza una computadora, y con una mayor conectividad que un teléfono convencional.
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="box4" >
+                                <p>Debido a ello, estos teléfonos reciben el nombre de inteligente, que se utiliza más bien con fines comerciales para distinguir de los teléfonos celulares básicos. El antecedente más cercano de estos dispositivos son los PDA.
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4" >
+                                <p>Por otra parte, los teléfonos inteligentes modernos tienen sus orígenes a fines de la década de los 2000 y se popularizaron rápidamente en el transcurso de la década de 2010. Recientemente, a principios del año 2013, los teléfonos inteligentes superan en venta a los teléfonos celulares básicos/convencionales, revolucionando para siempre la telefonía móvil/celular desde entonces.2​ Los sistemas operativos móviles más utilizados al año 2021 son Android e iOS y las marcas más populares son Xiaomi, Samsung, Apple, Oppo, Realme, Vivo, Motorola y Huawei.
+                                </p> 
+                            </div>
+                        </div>
+                        <!--Imágenes-->
+                        <div class="row">
+                            <div class="box4" >
+                               
+                                <img class="imgcontsmart" src="https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2018/07/smartphone.jpg?width=1200&enable=upscale" width="50%"" height="auto">
+                                
+                                <img class="imgcontsmart" src="https://conceptodefinicion.de/wp-content/uploads/2014/08/smartphone.jpg" 
+                                width="50%"" height="auto">
+                                <img class="imgcontsmart" src="https://www.muycomputer.com/wp-content/uploads/2021/04/Ventas-de-smartphones-2021-e1618999098671.jpg" width="50%"" height="auto">
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="box3">
+                                <h2>Historia</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>El primer teléfono inteligente fue diseñado por IBM en 1992 y se llamó Simón. Fue mostrado como un producto concepto en ese año en la expo COMDEX. Fue liberado al público en 1993 y comercializado por BellSouth. Aparte de ser un teléfono móvil, contenía calendario, libreta de direcciones, reloj mundial, calculadora, libreta de anotaciones, correo electrónico, enviaba y recibía FAX e incluía juegos</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>No tenía botones físicos para marcar. En su lugar usaba una pantalla táctil para seleccionar los contactos con el dedo o para crear facsímiles y memos con un stylus opcional. El texto era ingresado con un teclado predictivo incluido en la pantalla. Para los estándares de la actualidad, el Simon sería de lejos un teléfono de gama baja. El Nokia 9000, liberado en 1996, fue catalogado como un comunicador, pero fue discutiblemente el primero en una línea de teléfonos inteligentes</p>
+                               
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>El Ericsson R380 fue vendido como un "teléfono inteligente", pero no podía ejecutar aplicaciones nativas de terceros. Aunque el Nokia 9210 fue discutiblemente el primer teléfono inteligente con sistema operativo, Nokia continuó refiriéndose a él como comunicador. Aunque el Nokia 7650 (anunciado en el 2001) fue referido como un "smartphone" en los medios de comunicación y ahora es llamado "smartphone" en el sitio de soporte de Nokia, la prensa lo calificó como un teléfono destinado al ámbito fotográfico. El término ganó credenciales cuando en el 2002 Microsoft anunció sus sistema operativo para celulares</p>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="box3">
+                                <h2>Los más vendidos en 2020</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="espacio2">
+
+                            </div>
+                            <div class="box5">
+                                <ul>
+                                    
+                                    <li><b>El iPhone 11 </b>vendió 37,7 millones de unidades</li>
+                                    <li><b>El Galaxy A51 </b>vendió 11,4 millones de unidades</li>
+                                    <li><b>El redmi Note 8  </b>vendió 11 millones de unidades</li>
+                                    <li><b>El redmi Note 8 Pro  </b> vendió 10,2 millones de unidades</li>
+                                    <li><b>El iPhone XR  </b>vendió 8 millones de unidades</li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            
+            <div class="espacio1"></div>
+        </div>
+    </div>
+</body>
+</html>

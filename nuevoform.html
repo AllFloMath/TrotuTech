@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+    <style>
+        *{
+         box-sizing: border-box;
+       }
+       body{
+           
+           color:#003638;
+           font-family: 'Open Sans', sans-serif;
+           height: 100vh;
+       }
+       [class*='col-']{
+         float:left;
+         padding: 15px;      
+       }
+       .row::after{
+         content: '';
+         display: table;
+         clear: both;
+       }
+       /*celulares*/
+       .col-1{width: 8.33%;}
+       .col-2{width: 16.66%;}
+       .col-3{width: 25%;}
+       .col-4{width: 33.33%;}
+       .col-5{width: 41.66%;}
+       .col-6{width: 50%;}
+       .col-7{width: 58.33%;}
+       .col-8{width: 66.66%;}
+       .col-9{width: 75%;}
+       .col-10{width: 83.33%;}
+       .col-11{width: 91.66%;}
+       .col-12{width: 100%;}  
+       .container{
+           height: 120vh;
+           max-width: 90vw;
+         }
+      
+       /*tablet*/
+       @media only screen and (min-width:432px){
+         .col-m-1{width: 8.33%;}
+         .col-m-2{width: 16.66%;}
+         .col-m-3{width: 25%;}
+         .col-m-4{width: 33.33%;}
+         .col-m-5{width: 41.66%;}
+         .col-m-6{width: 50%;}
+         .col-m-7{width: 58.33%;}
+         .col-m-8{width: 66.66%;}
+         .col-m-9{width: 75%;}
+         .col-m-10{width: 83.33%;}
+         .col-m-11{width: 91.66%;}
+         .col-m-12{width: 100%;}  
+         .container{
+           height: 90vh;
+           max-width: 90vw;
+         }
+         
+       }
+       /*pc*/
+       @media only screen and (min-width:770px){
+         .col-g-1{width: 8.33%;}
+         .col-g-2{width: 16.66%;}
+         .col-g-3{width: 25%;}
+         .col-g-4{width: 33.33%;}
+         .col-g-5{width: 41.66%;}
+         .col-g-6{width: 50%;}
+         .col-g-7{width: 58.33%;}
+         .col-g-8{width: 66.66%;}
+         .col-g-9{width: 75%;}
+         .col-g-10{width: 83.33%;}
+         .col-g-11{width: 91.66%;}
+         .col-g-12{width: 100%;} 
+         .container{
+           height: 600px;
+           max-width: 900px;
+         }
+         .info{
+           height: 600px;
+         }
+       }
+
+       h1{
+           text-align: center;
+           font-size: 3em;
+       }
+       h1 span{
+           color:#57CC99;
+       }
+       body{
+           background-color: #EAFFFF;
+       }
+       .container{ 
+          padding:0;
+           background-color:white;
+           margin-left: auto;
+           margin-right: auto;
+           box-shadow: 0 0 20px rgba(200,200,200,0.8);
+          
+       }
+       input, textarea{
+           width: 100%;
+       }
+       input[type=text],input[type=email], textarea{
+           background-color: transparent;
+           border:none;
+           outline:none;
+           color:#003638;
+           border-bottom: 2px solid #005255;
+           padding:10px 10px;
+           font-size: 1.3em;
+       }
+       input[type=submit] {
+           background-color:#005255 ;
+           color:#a6ccce;
+           padding:10px 10px;
+           text-transform: uppercase;
+           border:none;
+           outline: none;
+           cursor:pointer;
+
+       }
+       input[type=submit]:hover{
+           background-color:#007e83 ;
+       }
+       .info{
+           background-color:#005255;
+           color: #EAFFFF;
+          
+       }
+
+
+
+
+       *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        [class^='row']{
+            flex-basis: 15vh;
+            flex-direction:row;
+            display: flex;
+            
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        h1{
+            padding-left: 10%;
+            font-family: 'Open Sans', sans-serif;
+        }
+        [class^='box']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        [class^='espacio']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        /* Aquí se definen las cosas. La mayoría se explica solo */
+        div.nav{
+            background-color:#003638;
+        }
+        
+        .contenido{
+            padding: 3%;
+            background-color:#003638;
+        }
+        .articulos{
+            padding: 3%;
+            flex-basis: 100%;
+            background-color:white;
+            border-bottom-color: #003638;
+            border-bottom-width: 3px;
+            border-bottom-style: dotted;
+        }
+        .imagenes{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            
+        }
+        .imagenes img{
+            filter: brightness(0.6);
+        }
+        .espacio1{
+            flex-basis: 10%;
+        }
+        .espacio2{
+            flex-basis: 14.28%;
+        }
+        .box1{
+            flex-basis: 100%;
+            font-family: 'Warnes', cursive;
+            font-size: 7vh;
+        }
+        .box2{
+            flex-basis: 14.28%;
+            text-align: center;
+        }
+        .box2 a{
+            color: #48CAE4;
+        }
+
+        .box3{
+            flex-basis: 26.8%;
+            padding: 1%;
+        }
+        .box4{
+            flex-basis: 50%;
+        }
+        .box5 a{
+            color: #003638;
+            font-size: x-large;
+        }
+        .box5{
+            flex-basis: 40%;
+            color: #003638;
+        }
+        .box5 a{
+            color: #003638;
+        }
+        
+        .box6{
+            flex-basis: 100%;
+        }
+        
+        .box7{
+            flex-basis: 20%;
+        }
+        .box8{
+            flex-basis: 100%;
+        }
+        .box8 a{
+            color: #003638;
+        }
+
+
+        
+        /* Estos son los hovers y los @media */
+        
+        .imagenes :hover{
+            filter: brightness(1);
+            transition: all 0.1s linear;
+            border:5px solid #48CAE4;
+            transition: all 0.4s linear;
+       
+            text-decoration: underline;
+        }
+          .box6 p :hover{
+            transition: all 0.2s linear;
+            color: #003638;
+            text-decoration: underline;
+        }
+            div.box5  :hover{
+            color: #2532BA;
+            
+        }
+            div.box8  :hover{
+            color: #2532BA;
+            
+        }
+        
+        @media screen and (max-width:600px) {
+            div.row1{
+                flex-direction: column;
+            }
+            .row{
+                flex-direction: column;
+            }
+            .contenido{
+                flex-direction: column;
+            }
+            .box2{
+                flex-basis: 100%;
+                display:inline;
+                flex-direction: column;
+            }
+            .espacio2{
+                flex-basis: 0%;
+            }
+        }
+
+        .footer{
+            margin-top: 30px;
+            height: 100px;
+            width: 100%;
+            background-color:#003638;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .contfooter{
+            color: white;
+        }
+        .espacio3{
+            height: 2vh;
+        }
+        .row1{
+            background-color: #055052;
+        }
+        div.row1 div.box2  :hover{
+            transition: all 0.4s linear;
+            background-color: #53B8BB;
+            color: #EAFFFF;
+            /*color: #003638;*/
+            /*padding-top: 5px;*/
+            /*padding-bottom: 5px;*/
+            width: 100%;
+            
+            display: inline-block;
+            border-radius: 10px;
+        }
+        a.letra1{
+            color: #22577A;
+            font-size: 9vh;
+        }
+        a.letra2{
+            color:#57CC99;
+        }
+   </style>
+</head>
+<body>
+    <!-- Aquí comeinza la barra de navegación o como le quieras llamar  --> 
+    <div class="nav">
+        <!-- Ahora comienza el menú --> 
+        <div class="row">
+
+            <div class="box1">
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" class="letra2" >rotu</a>
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" >ech</a>
+                
+                </div>
+        </div>
+
+        <div class="row1">
+            <div class="espacio2"></div>
+            <div class="box2"><a href="Componentes.html">Componentes </a></div>
+            <div class="box2"><a href="Perifericos.html">Periféricos</a></div>
+            <div class="box2"><a href="Lenguajes de programacion.html">Programación</a></div>
+            <div class="box2"><a href="Smartphones.html">Smartphones</a></div>
+            <div class="box2"><a href="nuevoform.html">Contáctanos</a></div>
+            <div class="espacio2"></div>
+        </div>
+        <div class="espacio3"></div>
+    </div>
+
+
+
+    <h1>Contác<span>tanos</span></h1>
+    <div class="container">
+        <div class="col-g-8 col-m-12">
+            <h2>Contáctanos</h2>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="mail">Dirección de correo</label>
+                <input type="email" id="mail" name="mail">
+            </div>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="phone">Número telefónico</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="affair">Asunto</label>
+                <input type="text" id="affair" name="affair">
+            </div>
+            <div class="col-g-12 col-m-12 col-12">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows=5></textarea>
+            </div>
+            <div class="col-g-12 col-m-12 col-12">
+                <input type="submit" value="Send &rarr;">
+            </div>
+        </div>
+        <div class="col-g-4 col-m-12 col-12 info">
+           <h3>Más información</h3>
+           <p><i class="fas fa-map-marker-alt"></i> Bo. San Francisco</p>
+           <p><i class="fas fa-phone"></i> (+504) 2772-0092</p>
+           <p><i class="fas fa-envelope-open-text"></i> info@maristascomayagua.edu.hn</p>
+           <p>No te quedes con la duda en tu mente. Siempre intentamos responder a cada mensaje enviado</p>
+           <p>maristascomayagua.com</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contfooter">
+            <p>@2021, todos los derechos reservados</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <title>Hola. Soy una plantilla. No me edites</title>
+</head>
+<style>
+    *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        [class^='row']{
+            flex-basis: 15vh;
+            flex-direction:row;
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        h1{
+            padding-left: 10%;
+            font-family: 'Open Sans', sans-serif;
+        }
+        [class^='box']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        [class^='espacio']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        /* Aquí se definen las cosas. La mayoría se explica solo */
+        div.nav{
+            background-color: #003638;
+        }
+        .contenido{
+            padding: 3%;
+            background-color: #EAFFFF;
+        }
+        .espacio1{
+            flex-basis: 10%;
+        }
+        .espacio2{
+            flex-basis: 14.28%;
+        }
+        .espacio3{
+            height: 2vh;
+        }
+        .box1{
+            flex-basis: 100%;
+            font-family: 'Warnes', cursive;
+            font-size: 7vh;
+        }
+        .box2 {
+            height: 3vh;
+            flex-basis: 14.28%;
+            text-align: center;
+        }
+        .box a{
+            height: 7vh;
+        }
+        .box2 a{
+            color: #48CAE4;
+        }
+        .row1{
+            background-color: #055052;
+        }
+        div.row1 div.box2  :hover{
+            transition: all 0.4s linear;
+            background-color: #53B8BB;
+            color: #EAFFFF;
+            /*color: #003638;*/
+            /*padding-top: 5px;*/
+            /*padding-bottom: 5px;*/
+            width: 100%;
+            
+            display: inline-block;
+            border-radius: 10px;
+        }
+        @media screen and (max-width:600px) {
+            div.row1{
+                flex-direction: column;
+            }
+            .row{
+                flex-direction: column;
+            }
+            .contenido{
+                flex-direction: column;
+            }
+            .box2{
+                flex-basis: 100%;
+                display:inline;
+                flex-direction: column;
+            }
+            .espacio2{
+                flex-basis: 0%;
+            }
+        }
+        a.letra1{
+            color: #22577A;
+            font-size: 9vh;
+        }
+        a.letra2{
+            color:#57CC99;
+        }
+</style>
+<body>
+    <div class="nav">
+        <!-- Ahora comienza el menú --> 
+        <div class="row">
+
+            <div class="box1">
+                <a class="letra1">T</a>
+                <a class="letra2" >rotu</a>
+                <a class="letra1">T</a>
+                <a ">ech</a>
+                
+                </div>
+        </div>
+
+        <div class="row1">
+            <div class="espacio2"></div>
+            <div class="box2"><a href="#">Componentes </a></div>
+            <div class="box2"><a href="#">Periféricos</a></div>
+            <div class="box2"><a href="#">Programación</a></div>
+            <div class="box2"><a href="#">Smartphones</a></div>
+            <div class="box2"><a href="#">Contáctanos</a></div>
+            <div class="espacio2"></div>
+        </div>
+        <div class="espacio3"></div>
+    </div>
+    <!--Aquí es la zona específica del espacio conocido en que el contenido toma lugar-->
+    <div class="contenido">
+        <div class="row">
+            <div class="espacio1"></div>
+            <div class="box6">
+                
+                    <div class="articulos">
+                        <div class="row">
+                            <div class="box4">
+                                <img src="https://www.thephoblographer.com/wp-content/uploads/2020/04/WTFStockPhotos12-770x735.jpg" height="80%" width="80%">
+                            </div>
+                            <div class="box5">
+                                <a href="#">Alza en el precio de las hamburguesas coasiona crsis internacional. OMS busca la erradicación total de la comida rápida.</a>
+                            </div>
+                            <div class="espacio1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="box6">
+                                
+                                <p>Se cree que este será el fin de la comida rápida, aunque frentes de resistencia se están comenzando a formar a lo largo de los Estados Unidos con la intención de detener a las fuerzas de la OMS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae architecto earum cumque provident suscipit dignissimos consequatur sunt deleniti non itaque magni autem eveniet voluptates, doloremque ea sed incidunt facere culpa? <a  href="#">LEER MÁS--></a>
+                                </p> 
+                                
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            
+            <div class="espacio1"></div>
+        </div>
+    </div>
+</body>
+</html>

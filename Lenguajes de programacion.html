@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <title>Lenguajes de Programacion</title>
+</head>
+<style>
+    *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        [class^='row']{
+            flex-basis: 15vh;
+            flex-direction:row;
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        h1{
+            font-size: 5vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h2{
+            font-size: xx-large;
+            padding-top: 3%;
+            padding-bottom: 2%;
+        }
+    
+        [class^='box']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        [class^='espacio']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        /* Aquí se definen las cosas. La mayoría se explica solo */
+        div.nav{
+            background-color: #003638;
+        }
+        .contenido{
+            padding: 3%;
+            background-color: #EAFFFF;
+        }
+        .espacio1{
+            flex-basis: 10%;
+        }
+        .espacio2{
+            flex-basis: 14.28%;
+        }
+        .box1{
+            flex-basis: 100%;
+            font-family: 'Warnes', cursive;
+            font-size: 7vh;
+        }
+        .box2{
+            flex-basis: 14.28%;
+            text-align: center;
+        }
+        .box3{
+            flex-basis: 10%;
+        }
+        .box4{
+            flex-basis: 100%;
+            text-align: justify;
+            text-justify: inter-word;
+            flex-direction: column;
+        }
+        .box4 p{
+            padding-bottom: 2%;
+        }
+        .box2 a{
+            color: #48CAE4;
+        }
+        
+        @media screen and (max-width:600px) {
+            div.row1{
+                flex-direction: column;
+            }
+            .row{
+                flex-direction: column;
+            }
+            .contenido{
+                flex-direction: column;
+            }
+            .box2{
+                flex-basis: 100%;
+                display:inline;
+                flex-direction: column;
+            }
+            .espacio2{
+                flex-basis: 0%;
+            }
+        }
+
+        .imgcontldp{
+            padding: 10px;
+        }
+        .espacio3{
+            height: 2vh;
+        }
+        .row1{
+            background-color: #055052;
+        }
+        div.row1 div.box2  :hover{
+            transition: all 0.4s linear;
+            background-color: #53B8BB;
+            color: #EAFFFF;
+            /*color: #003638;*/
+            /*padding-top: 5px;*/
+            /*padding-bottom: 5px;*/
+            width: 100%;
+            
+            display: inline-block;
+            border-radius: 10px;
+        }
+        a.letra1{
+            color: #22577A;
+            font-size: 9vh;
+        }
+        a.letra2{
+            color:#57CC99;
+        }
+</style>
+<body>
+    <div class="nav">
+        <!-- Ahora comienza el menú --> 
+        <div class="row">
+
+            <div class="box1">
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" class="letra2" >rotu</a>
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" >ech</a>
+                
+                </div>
+        </div>
+
+        <div class="row1">
+            <div class="espacio2"></div>
+            <div class="box2"><a href="Componentes.html">Componentes </a></div>
+            <div class="box2"><a href="Perifericos.html">Periféricos</a></div>
+            <div class="box2"><a href="Lenguajes de programacion.html">Programación</a></div>
+            <div class="box2"><a href="Smartphones.html">Smartphones</a></div>
+            <div class="box2"><a href="nuevoform.html">Contáctanos</a></div>
+            <div class="espacio2"></div>
+        </div>
+        <div class="espacio3"></div>
+    </div>
+    <!--Aquí es la zona específica del espacio conocido en que el contenido toma lugar-->
+    <div class="contenido">
+        <div class="row">
+            <div class="espacio1"></div>
+            
+            <div class="box4">
+                    
+                    <div class="articulos">
+                        <div class="row">
+                            <div class="box3">
+                                <h1>Lenguajes de Programacion</h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="box4" >
+                                <p>Aunque muchos no se den cuenta, hoy no podemos entender el mundo sin los lenguajes de programación. Y es que, prácticamente todo lo que nos rodea está construido con código. Las aplicaciones del móvil, las redes sociales, un videojuego, un programa de nuestro ordenador o hasta los elementos que estoy utilizando para escribir esto han sido creados con un lenguaje de programación.
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="box4" >
+                                <p>La historia de los lenguajes de programación comienza según la mayoría de los autores cuando Charles Babbage inventó su computadora en el año 1822. El necesito un lenguaje para poder comunicarse con esta máquina. Estos primeros lenguajes de programación estaban muy unidos a la computadora y fueron creados para cada una de ellas. Este lenguaje era muy rudimentario y consistía en la programación de los diferentes cambios de engranajes que ejecutaban los cálculos.
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4" >
+                                <p>A continuación os contaremos, a grandes rasgos, la historia de los lenguajes de programación pasando por diferentes hitos. Y sí, hay que empezar por hace dos siglos, cuando se estima que se creó la primera unidad de programación y, claro, el primer lenguaje de programación.
+                                </p> 
+                            </div>
+                        </div>
+                        <!--Imágenes-->
+                        <div class="row">
+                            <div class="box4" >
+                               
+                                <img class="imgcontldp" src="https://haycanal.com/uploads/noticias/14949/Cualenguaje_programacion.jpg" width="50%"" height="auto">
+                                
+                                <img class="imgcontldp" src="https://4.bp.blogspot.com/-gfYA8GClxlE/WAajYc7Y2iI/AAAAAAAACvk/OWM7sCLcbAkwafef9yTLEMiMw1vFmgG4gCLcB/s640/Estos%2Bson%2Blos%2Blenguajes%2Bde%2Bprogramaci%25C3%25B3n%2Bque%2Butilizan%2BFacebook%252C%2BGoogle%252C%2BWindows%252C%2BApple%252C%2BLinux%2By%2Botros.jpg" 
+                                width="50%"" height="auto">
+                                <img class="imgcontldp" src="https://codigoonclick.com/wp-content/uploads/2018/02/mejores-lenguajes-de-programacion-2018-1024x614.jpg" width="50%"" height="auto">
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="box3">
+                                <h2>Historia</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>Joseph Marie Jacquard fue el inventor del telar programable. Este inventor francés es el responsable de la programación. No es el inventor de la misma, ya que las cosas han cambiado mucho desde entonces, pero está claro que creó el primer sistema de instrucciones para un ''computador''. </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>Y es que, sus tarjetas programables se introducían en un telar que leía el código, las instrucciones, de dichas tarjetas y automatizaba procesos. Evidentemente, se trataba de crear diferentes diseños en tejidos, pero esto permitió que cualquiera con el telar y las tarjetas perforadas crearan estos diseños sin ser expertos en la materia.</p>
+                               
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>Se estima que este fue el primer lenguaje de programación, ya que estas tarjetas perforadas se utilizaron en las primeras máquinas computacionales creadas por Charles Babbage, y posteriormente por los primeros ordenadores.</p>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="box3">
+                                <h2>Lenguajes De Programacion mas usados.</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="espacio2">
+
+                            </div>
+                            <div class="box5">
+                                <ul>
+                                    <li><b>Python: </b>Python es de código abierto, con una sintaxis simple y sencilla de entender, quizá el más fácil de este listado. Es idóneo para iniciarse en el mundo de la programación. Es muy versátil por lo que tiene múltiples áreas de aplicación como: inteligencia artificial, Big Data y desarrollo web.</li>
+                                    <li><b>Java: </b>Este lenguaje orientado a objetos funciona independientemente de la plataforma de hardware, entonces, el código escrito en una máquina corre en otra, sin problemas. Incluso, si los sistemas operativos son diferentes, el código Java funciona gracias a la Máquina Virtual Java o JVM, por las siglas en inglés. </li>
+                                    <li><b>JavaScript: </b>Otro lenguaje de programación orientado a objetos. Como es interpretado, no necesita compilación, entonces los navegadores leen el código y ejecutan las acciones indicadas. Esta característica, lo hace idóneo para crear páginas o aplicaciones web, con elementos interactivos o más visuales, de allí su relevancia en el desarrollo de videojuegos.</li>
+                                    <li><b>C#: </b>C# es un lenguaje de programación muy versátil, creado por Microsoft, con características similares al Lenguaje C, pero orientado a objetos. Es muy usado en la industria de los juegos, robótica, impresión 3D, internet de las cosas y desarrollo de aplicaciones web y móviles. Así como también, en el desarrollo de aplicaciones nativas para Microsoft, iOS y Android, como controladores y aplicaciones de escritorio.</li>
+                                    <li><b>C++: </b>C++ es un lenguaje de programación creado, como una extensión del lenguaje C, para hacerlo orientado a objetos. Es capaz de compilar instrucciones, por lo que brinda acceso total al hardware, originando su amplio uso en bases de datos, navegadores web y videojuegos.</li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            
+            <div class="espacio1"></div>
+        </div>
+    </div>
+</body>
+</html>

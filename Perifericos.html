@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <title>Periféricos</title>
+</head>
+<style>
+    *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        [class^='row']{
+            flex-basis: 15vh;
+            flex-direction:row;
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        h1{
+            font-size: 5vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h2{
+            font-size: xx-large;
+            padding-top: 3%;
+            padding-bottom: 2%;
+        }
+    
+        [class^='box']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        [class^='espacio']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        /* Aquí se definen las cosas. La mayoría se explica solo */
+        div.nav{
+            background-color: #003638;
+        }
+        .contenido{
+            padding: 3%;
+            background-color: #EAFFFF;
+        }
+        .espacio1{
+            flex-basis: 10%;
+        }
+        .espacio2{
+            flex-basis: 14.28%;
+        }
+        .box1{
+            flex-basis: 100%;
+            font-family: 'Warnes', cursive;
+            font-size: 7vh;
+        }
+        .box2{
+            flex-basis: 14.28%;
+            text-align: center;
+        }
+        .box3{
+            flex-basis: 10%;
+        }
+        .box4{
+            flex-basis: 100%;
+            text-align: justify;
+            text-justify: inter-word;
+            flex-direction: column;
+        }
+        .box4 p{
+            padding-bottom: 2%;
+        }
+        .box2 a{
+            color: #48CAE4;
+        }
+        
+        @media screen and (max-width:600px) {
+            div.row1{
+                flex-direction: column;
+            }
+            .row{
+                flex-direction: column;
+            }
+            .contenido{
+                flex-direction: column;
+            }
+            .box2{
+                flex-basis: 100%;
+                display:inline;
+                flex-direction: column;
+            }
+            .espacio2{
+                flex-basis: 0%;
+            }
+
+            .imgcontper{
+                padding: 10px;
+            }
+        }
+
+        .imgcontper{
+            padding: 10px;
+        }
+        .espacio3{
+            height: 2vh;
+        }
+        .row1{
+            background-color: #055052;
+        }
+        div.row1 div.box2  :hover{
+            transition: all 0.4s linear;
+            background-color: #53B8BB;
+            color: #EAFFFF;
+            /*color: #003638;*/
+            /*padding-top: 5px;*/
+            /*padding-bottom: 5px;*/
+            width: 100%;
+            
+            display: inline-block;
+            border-radius: 10px;
+        }
+        a.letra1{
+            color: #22577A;
+            font-size: 9vh;
+        }
+        a.letra2{
+            color:#57CC99;
+        }
+</style>
+<body>
+    <div class="nav">
+        <!-- Ahora comienza el menú --> 
+        <div class="row">
+
+            <div class="box1">
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" class="letra2" >rotu</a>
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" >ech</a>
+                
+                </div>
+        </div>
+
+        <div class="row1">
+            <div class="espacio2"></div>
+            <div class="box2"><a href="Componentes.html">Componentes </a></div>
+            <div class="box2"><a href="Perifericos.html">Periféricos</a></div>
+            <div class="box2"><a href="Lenguajes de programacion.html">Programación</a></div>
+            <div class="box2"><a href="Smartphones.html">Smartphones</a></div>
+            <div class="box2"><a href="nuevoform.html">Contáctanos</a></div>
+            <div class="espacio2"></div>
+        </div>
+        <div class="espacio3"></div>
+    </div>
+    <!--Aquí es la zona específica del espacio conocido en que el contenido toma lugar-->
+    <div class="contenido">
+        <div class="row">
+            <div class="espacio1"></div>
+            
+            <div class="box4">
+                    
+                    <div class="articulos">
+                        <div class="row">
+                            <div class="box3">
+                                <h1>Periféricos</h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="box4" >
+                                <p>En informática, periférico es la denominación genérica para designar al aparato o dispositivo auxiliar e independiente conectado a la placa base de una computadora.
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="box4" >
+                                <p>Se consideran periféricos a las unidades o dispositivos de hardware a través de los cuales el ordenador se comunica con el exterior, y también a los sistemas que almacenan o archivan la información, sirviendo de memoria auxiliar de la memoria principal 
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4" >
+                                <p>Los periféricos son dispositivos que no pertenecen al núcleo fundamental del ordenador, formado por la unidad central de procesamiento (CPU) y la memoria principal, permitan realizar operaciones de entrada/salida (E/S) complementarias al proceso de datos que realiza la CPU. Estas tres unidades básicas en un ordenador son: CPU, memoria central y el subsistema de E/S, están comunicadas entre sí por tres buses o canales de comunicación
+                                </p> 
+                            </div>
+                        </div>
+                        <!--Imágenes-->
+                        <div class="row">
+                            <div class="box4" >
+                               
+                                <img class="imgcontper" src="https://intelectouniversal.com/wp-content/uploads/2020/07/perifericos-de-una-computadora-1.gif" width="50%"" height="auto">
+                                 <img class="imgcontper" src="https://intelectouniversal.com/wp-content/uploads/2020/07/perif%C3%A9ricos-de-entrada-2.jpg" 
+                                width="50%"" height="auto">
+                                <img class="imgcontper" src="data:image/jpeg;base64,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" width="50%"" height="auto">
+
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="box3">
+                                <h2>Historia</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>La primera máquina de calcular mecánica, un precursor del ordenador digital, fue inventada en 1642 por el matemático francés Blaise Pascal. Aquel dispositivo utilizaba una serie de ruedas de diez dientes en las que cada uno de los dientes representaba un dígito del 0 al 9. Las ruedas estaban conectadas de tal manera que podían sumarse números haciéndolas avanzar el número de dientes correcto. En 1670 el filósofo y matemático alemán Gottfried Wilhelm Leibniz perfeccionó esta máquina e inventó una que también podía multiplicar.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>El inventor francés Joseph Marie Jacquard, al diseñar un telar automático, utilizó delgadas placas de maderaperforadas para controlar el tejido utilizado en los diseños complejos. Durante la década de 1880 el estadístico estadounidense Herman Hollerith concibió la idea de utilizar tarjetasperforadas, similares a las placas de Jacquard, para procesar datos. Hollerith consiguió compilar la información estadística destinada al censo de población de 1890 de Estados Unidos mediante la utilización de un sistemaque hacía pasar tarjetas perforadas sobre contactos eléctricos.</p>
+                               
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>International Business Machines Corporation, IBM, fabricante estadounidense de ordenadores o computadoras, con sede en Armonk, Nueva York. IBM es uno de los grandes proveedoresde sistemas de tratamiento de información, software, sistemas de comunicaciones, estaciones de trabajo y suministros y serviciosauxiliares en todo el mundo. Sus productosse utilizan en una amplia variedad de entornos, desde las compañías privadas hasta los organismos públicos, pasando por las organizacionescientíficas, la defensa, la medicina y la exploración del espacio. La compañía se estableció en 1911 como Computing-Tabulating-Recording Company, producto de la fusiónde tres compañías menores.</p>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="box3">
+                                <h2>Clasificación</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box4">
+                                <p>Los periféricos pueden clasificarse en las siguientes categorías principales:</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="espacio2">
+
+                            </div>
+                            <div class="box5">
+                                <ul>
+                                    <li><b>Periféricos de entrada: </b>captan y digitalizan los datos de ser necesario, introducidos por el usuario o por otro dispositivo y los envían al ordenador para ser procesados.</li>
+                                    <li><b>Periféricos de salida: </b>son dispositivos que muestran o proyectan información hacia el exterior del ordenador. La mayoría son para informar, alertar, comunicar, proyectar o dar al usuario cierta información, de la misma forma se encargan de convertir los impulsos eléctricos en información legible para el usuario. Sin embargo, no todos de este tipo de periféricos es información para el usuario. Un ejemplo: Impresora.</li>
+                                    <li><b>Periféricos de entrada/salida (E/S): </b>sirven para la comunicación de la computadora con el medio externo.</li>
+                                    <li><b>Periféricos de almacenamiento: </b>son los dispositivos que almacenan datos e información. La memoria de acceso aleatorio no puede ser considerada un periférico de almacenamiento, ya que su memoria es volátil y temporal. Ejemplos: Disco duro, Memoria flash, Cinta magnética, Memoria portátil, Disquete, Grabadora o lectora de: CD; DVD; Blu-ray; HD-DVD.</li>
+                                    <li><b>Periféricos de comunicación: </b>permiten la interacción entre dos o más dispositivos.</li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            
+            <div class="espacio1"></div>
+        </div>
+    </div>
+</body>
+</html>

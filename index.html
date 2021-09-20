@@ -1,0 +1,366 @@
+<!-- Hola. Soy un memento del autor original de este código. No me borres. Quiero vivir en los servidores de Git Hub para siempre --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <title>TrotuTech</title>
+</head>
+<style>
+       
+       *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        [class^='row']{
+            flex-basis: 15vh;
+            flex-direction:row;
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        h1{
+            padding-left: 10%;
+            font-family: 'Open Sans', sans-serif;
+        }
+        [class^='box']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        [class^='espacio']{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #53B8BB;
+        }
+        /* Aquí se definen las cosas. La mayoría se explica solo */
+        div.nav{
+            background-color: #003638;
+        }
+        
+        .contenido{
+            padding: 3%;
+            background-color: #EAFFFF;
+        }
+        .articulos{
+            padding: 3%;
+            flex-basis: 100%;
+            background-color: white;
+            border-bottom-color: #003638;
+            border-bottom-width: 3px;
+            border-bottom-style: dotted;
+        }
+        .imagenes{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            
+        }
+        .imagenes img{
+            filter: brightness(0.6);
+        }
+        .espacio1{
+            flex-basis: 10%;
+        }
+        .espacio2{
+            flex-basis: 14.28%;
+        }
+        .box1{
+            flex-basis: 100%;
+            font-family: 'Warnes', cursive;
+            font-size: 7vh;
+        }
+        .box2{
+            flex-basis: 14.28%;
+            text-align: center;
+        }
+        .box2 a{
+            color: #48CAE4;
+        }
+        .box3{
+            flex-basis: 26.8%;
+            padding: 1%;
+        }
+        .box4{
+            flex-basis: 50%;
+        }
+        .box5 a{
+            color: #003638;
+            font-size: x-large;
+        }
+        .box5{
+            flex-basis: 40%;
+            color: #003638;
+        }
+        .box5 a{
+            color: #003638;
+        }
+        
+        .box6{
+            flex-basis: 100%;
+        }
+        
+        .box7{
+            flex-basis: 20%;
+        }
+        .box8{
+            flex-basis: 100%;
+        }
+        .box8 a{
+            color: #003638;
+        }
+
+
+        
+        /* Estos son los hovers y los @media */
+        
+        .imagenes :hover{
+            filter: brightness(1);
+            transition: all 0.1s linear;
+            border:5px solid #48CAE4;
+            transition: all 0.4s linear;
+       
+            text-decoration: underline;
+        }
+          .box6 p :hover{
+            transition: all 0.2s linear;
+            color: #003638;
+            text-decoration: underline;
+        }
+            div.box5  :hover{
+            color: #2532BA;
+            
+        }
+            div.box8  :hover{
+            color: #2532BA;
+            
+        }
+        
+        @media screen and (max-width:600px) {
+            div.row1{
+                flex-direction: column;
+            }
+            .row{
+                flex-direction: column;
+            }
+            .contenido{
+                flex-direction: column;
+            }
+            .box2{
+                flex-basis: 100%;
+                display:inline;
+                flex-direction: column;
+            }
+            .espacio2{
+                flex-basis: 0%;
+            }
+        }
+        .espacio3{
+            height: 2vh;
+        }
+        .row1{
+            background-color: #055052;
+        }
+        div.row1 div.box2  :hover{
+            transition: all 0.4s linear;
+            background-color: #53B8BB;
+            color: #EAFFFF;
+            /*color: #003638;*/
+            /*padding-top: 5px;*/
+            /*padding-bottom: 5px;*/
+            width: 100%;
+            
+            display: inline-block;
+            border-radius: 10px;
+        }
+        a.letra1{
+            color: #22577A;
+            font-size: 9vh;
+        }
+        a.letra2{
+            color:#57CC99;
+        }
+        div.articulos{
+            height: 100%;
+        }
+
+</style>
+<body>
+    <!-- Aquí comeinza la barra de navegación o como le quieras llamar  --> 
+    <div class="nav">
+        <!-- Ahora comienza el menú --> 
+        <div class="row">
+
+            <div class="box1">
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" class="letra2" >rotu</a>
+                <a href="index.html" class="letra1">T</a>
+                <a href="index.html" >ech</a>
+                
+                </div>
+        </div>
+
+        <div class="row1">
+            <div class="espacio2"></div>
+            <div class="box2"><a href="Componentes.html">Componentes </a></div>
+            <div class="box2"><a href="Perifericos.html">Periféricos</a></div>
+            <div class="box2"><a href="Lenguajes de programacion.html">Programación</a></div>
+            <div class="box2"><a href="Smartphones.html">Smartphones</a></div>
+            <div class="box2"><a href="nuevoform.html">Contáctanos</a></div>
+            <div class="espacio2"></div>
+        </div>
+        <div class="espacio3"></div>
+    </div>
+    
+    <!-- Aquí comeinza el contenido normal. --> 
+    <div class="contenido">
+        <h1>Lo más nuevo</h1>
+        <!-- Esto es uno por fila --> 
+        <div class="row">
+            <div class="espacio1"></div>
+            <div class="box6">
+                
+                    <div class="articulos">
+                        <div class="row">
+                            <div class="box4">
+                                <img src="http://www.partesdeunacomputadora.net/wp-content/uploads/2013/07/placa-base.jpg" height="80%" width="80%">
+                            </div>
+                            <div class="box5">
+                                <a href="Componentes.html">¿Quieres mejorar tu ordenador pero no sabes qué es lo qué tiene adentro? </a>
+                            </div>
+                            <div class="espacio1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="box6">
+                                
+                                <p>Los ordenadores son más más que complejas, por lo que puede resultar incompresiblemente complejo el construir o mejorar una, pero lo cierto es que no lo son. Comprender qué hace cada parte de tu computador con cierto grado de profundidad no es difícil. No se requiere ser un especialista para ello. Por eso, nosotros hemos escrito un artículo en el que te lo explicamos.  <a  href="Componentes.html">LEER MÁS--></a>
+                                </p> 
+                                
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            
+            <div class="espacio1"></div>
+        </div>
+        <!--Esto es para dos columnas-->
+         <div class="row">
+            <div class="espacio1"></div>
+            <div class="box6">
+                
+                    <div class="articulos">
+                        <div class="row">
+                            
+                            <div class="box8">
+                                <a href="Perifericos.html">¿Dudas sobre qué  cada uno de esos componentes que conectas a tu ordenador?</a>
+                            </div>
+                            <div class="espacio1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="box6">
+                                
+                                <p>Aprende un poco acerca de qué son los perífericos, y su historia a lo largo de la historia de la informática <a  href="Perifericos.html">LEER MÁS--></a>
+
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articulos">
+                        <div class="row">
+                            <div class="box8">
+                                <a href="nuevoform.html">¿Tienes una gran idea que quieres comentarnos? ¿o alguna pregunta?.</a>
+                            </div>
+                            <div class="espacio1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="box6">
+                                
+                                <p>Contacta con nosostros si deseas indagar más acerca de un tema de tu interés, o comentar algo que te interese <a  href="nuevoform.html">LEER MÁS--></a>
+
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            
+            
+            <div class="espacio1"></div>
+        </div>
+        <div class="row">
+            <div class="espacio1"></div>
+            <div class="box6">
+                
+                    <div class="articulos">
+                        <div class="row">
+                            <div class="box4">
+                                <img src="https://codigoonclick.com/wp-content/uploads/2018/02/mejores-lenguajes-de-programacion-2018.jpg" height="80%" width="80%">
+                            </div>
+                            <div class="box5">
+                                <a href="Lenguajes de programacion.html">¿Interesado en profundizar más en la informática? La programación puede ser lo adecuado para ti. </a>
+                            </div>
+                            <div class="espacio1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="box6">
+                                
+                                <p>Aunque muchos no se den cuenta, hoy no podemos entender el mundo sin los lenguajes de programación. Y es que, prácticamente todo lo que nos rodea está construido con código. Las aplicaciones del móvil, las redes sociales, un videojuego, un programa de nuestro ordenador o hasta los elementos que estoy utilizando para escribir esto han sido creados con un lenguaje de programación. La historia de los lenguajes de programación comienza según la mayoría de los autores cuando Charles Babbage inventó su computadora en el año 1822...  <a  href="Lenguajes de programacion.html">LEER MÁS--></a>
+                                </p> 
+                                
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            
+            <div class="espacio1"></div>
+        </div>
+        <div class="row">
+            <div class="espacio1"></div>
+            <div class="box6">
+                
+                    <div class="articulos">
+                        <div class="row">
+                            <div class="box4">
+                                <img src="https://www.muycomputer.com/wp-content/uploads/2021/04/Ventas-de-smartphones-2021-e1618999098671.jpg" height="80%" width="80%">
+                            </div>
+                            <div class="box5">
+                                <a href="Smartphones.html">Todos tenemos un teléfono inteligente. ¿Pero qué sabes realmente de él? Ven y lee un poco acerca de este elemento indispensable de nuestras vidas </a>
+                            </div>
+                            <div class="espacio1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="box6">
+                                
+                                <p>El teléfono inteligente (del inglés smartphone) es un dispositivo móvil que combina las funciones de un teléfono celular y de una computadora u ordenador de bolsillo. Estos dispositivos funcionan sobre una plataforma informática móvil, con mayor capacidad de almacenar y capaz de realizar tareas simultáneamente, tareas que realiza una computadora, y con una mayor conectividad que un teléfono convencional. Debido a ello, estos teléfonos reciben el nombre de inteligente, que se utiliza más bien con fines comerciales para distinguir de los teléfonos celulares básicos. El antecedente más cercano ...  <a  href="Smartphones.html">LEER MÁS--></a>
+                                </p> 
+                                
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            
+            <div class="espacio1"></div>
+        </div>
+    </div>
+</body>
+</html>
